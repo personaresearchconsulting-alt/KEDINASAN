@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Asesmen & Seleksi</title>
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            DEFAULT: '#0F172A',
+                            dark: '#000000',
+                            light: '#1E293B'
+                        },
+                        cream: {
+                            DEFAULT: '#F8F6F0',
+                            card: '#FFFFFF',
+                            muted: '#D1CDC0'
+                        },
+                        accent: {
+                            rose: '#8C3D38',
+                            gold: '#A67C4E'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-cream text-black antialiased min-h-screen flex flex-col justify-between selection:bg-black selection:text-white">
+
+    <!-- Header / Navigasi Atas -->
+    <header class="w-full py-6 px-8 border-b border-cream-muted bg-cream/90 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto flex justify-between items-center">
+            <span class="text-xs uppercase tracking-[0.25em] font-bold text-black">Portal Asesmen Mandiri</span>
+            <span class="text-xs text-black font-semibold">Dashboard Utama</span>
+        </div>
+    </header>
+
+    <!-- Konten Utama -->
+    <main class="max-w-4xl w-full mx-auto px-6 py-12 flex-grow flex flex-col justify-center">
+        
+        <!-- Judul Bagian -->
+        <div class="text-center mb-12">
+            <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight text-black mb-3">Pusat Navigasi Tes & Simulasi</h1>
+            <p class="text-black text-sm md:text-base font-medium max-w-lg mx-auto">Silakan pilih menu kategori asesmen di bawah ini untuk memulai sesi pengujian.</p>
+        </div>
+
+        <!-- Menu Grid (1 - 4) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            
+            <!-- Menu 1: Kecerdasan -->
+            <!-- GANTI '#' DI DALAM href DI BAWAH DENGAN FILE HTML ANDA (misal: href="kecerdasan.html") -->
+            <a href="#" class="group relative bg-cream-card p-8 rounded-2xl border-2 border-cream-muted shadow-sm hover:shadow-xl hover:border-black transition-all duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-center mb-6">
+                        <span class="text-xs font-extrabold tracking-widest text-black uppercase">Menu 01</span>
+                        <span class="w-8 h-8 rounded-full bg-cream border border-black/20 flex items-center justify-center text-black group-hover:bg-black group-hover:text-white transition-colors duration-300">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </span>
+                    </div>
+                    <h2 class="text-xl font-bold text-black group-hover:text-accent-rose transition-colors">Kecerdasan</h2>
+                    <p class="text-xs text-black font-semibold mt-2 leading-relaxed">Modul pengujian daya pikir, logika analitis, figural, verbal, dan numerik.</p>
+                </div>
+            </a>
+
+            <!-- Menu 2: Kepribadian -->
+            <!-- GANTI '#' DI DALAM href DI BAWAH DENGAN FILE HTML ANDA (misal: href="kepribadian.html") -->
+            <a href="#" class="group relative bg-cream-card p-8 rounded-2xl border-2 border-cream-muted shadow-sm hover:shadow-xl hover:border-black transition-all duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-center mb-6">
+                        <span class="text-xs font-extrabold tracking-widest text-black uppercase">Menu 02</span>
+                        <span class="w-8 h-8 rounded-full bg-cream border border-black/20 flex items-center justify-center text-black group-hover:bg-black group-hover:text-white transition-colors duration-300">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </span>
+                    </div>
+                    <h2 class="text-xl font-bold text-black group-hover:text-accent-rose transition-colors">Kepribadian</h2>
+                    <p class="text-xs text-black font-semibold mt-2 leading-relaxed">Inventori karakteristik diri, profil psikologis, dan pemetaan potensi personal.</p>
+                </div>
+            </a>
+
+            <!-- Menu 3: Tes Sikap Kerja -->
+            <!-- GANTI '#' DI DALAM href DI BAWAH DENGAN FILE HTML ANDA (misal: href="sikap-kerja.html") -->
+            <a href="#" class="group relative bg-cream-card p-8 rounded-2xl border-2 border-cream-muted shadow-sm hover:shadow-xl hover:border-black transition-all duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-center mb-6">
+                        <span class="text-xs font-extrabold tracking-widest text-black uppercase">Menu 03</span>
+                        <span class="w-8 h-8 rounded-full bg-cream border border-black/20 flex items-center justify-center text-black group-hover:bg-black group-hover:text-white transition-colors duration-300">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </span>
+                    </div>
+                    <h2 class="text-xl font-bold text-black group-hover:text-accent-rose transition-colors">Tes Sikap Kerja</h2>
+                    <p class="text-xs text-black font-semibold mt-2 leading-relaxed">Simulasi kecepatan, ketelitian, konsistensi, dan ketahanan di bawah tekanan.</p>
+                </div>
+            </a>
+
+            <!-- Menu 4: Persiapan Wawancara -->
+            <!-- GANTI '#' DI DALAM href DI BAWAH DENGAN FILE HTML ANDA (misal: href="wawancara.html") -->
+            <a href="https://personaresearchconsulting-alt.github.io/WAWANCARA-KEDINASAN/" class="group relative bg-cream-card p-8 rounded-2xl border-2 border-cream-muted shadow-sm hover:shadow-xl hover:border-black transition-all duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-center mb-6">
+                        <span class="text-xs font-extrabold tracking-widest text-black uppercase">Menu 04</span>
+                        <span class="w-8 h-8 rounded-full bg-cream border border-black/20 flex items-center justify-center text-black group-hover:bg-black group-hover:text-white transition-colors duration-300">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </span>
+                    </div>
+                    <h2 class="text-xl font-bold text-black group-hover:text-accent-rose transition-colors">Persiapan Wawancara</h2>
+                    <p class="text-xs text-black font-semibold mt-2 leading-relaxed">Panduan pertanyaan, simulasi tanya-jawab, dan teknik asesmen tatap muka.</p>
+                </div>
+            </a>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full py-6 px-8 border-t border-cream-muted text-center text-xs font-bold text-black">
+        &copy; 2026 &bull; All Rights Reserved.
+    </footer>
+
+</body>
+</html>
